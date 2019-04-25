@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+    stages{
+        stage('one'){
+            steps {
+                echo 'hi iam building'
+            }
+            
+         }
+		     stage('two'){
+             steps {
+                input('do u')
+            }
+            
+         }
+    }
+}
